@@ -12,4 +12,9 @@ public class IndexController {
         model.addAttribute("welcome", "BEm Vindo");
         return "index";
     };
+
+    @RequestMapping("/oups")
+    public String oupsError(){
+        return "notimplemented";
+    }
 }
